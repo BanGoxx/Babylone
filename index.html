@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Babylone – Concept de Jeu Vidéo</title>
+    <style>
+        body {
+            background-color: #1b1b23;
+            color: #F2D16B;
+            font-family: 'Press Start 2P', 'VT323', 'Courier New', monospace;
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+            border: 5px solid #F7A276;
+            box-shadow: 0 0 20px #FFD70033;
+        }
+        h1, h2, h3 {
+            color: #FFED86;
+            text-shadow: 2px 2px #3F3351, 0 0 6px #F7A276;
+            font-variant: small-caps;
+        }
+        h1 {
+            font-size: 2.3em;
+            border-bottom: 3px dashed #F7A276;
+            padding-bottom: 8px;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 2em;
+            border-left: 8px solid #F7A276;
+            padding-left: 14px;
+        }
+        h3 {
+            font-size: 1.1em;
+            margin-top: 1em;
+            color: #AAB6FF;
+        }
+        ul, ol {
+            font-size: 1em;
+            margin-left: 2em;
+        }
+        th, td {
+            border: 1px solid #FFED86;
+            padding: 8px 12px;
+        }
+        table {
+            margin: 20px 0;
+            border-collapse: collapse;
+            background: #262646;
+            color: #FFED86;
+            box-shadow: 0 0 4px #F2D16B;
+            width: 100%; /* Ajout pour que le tableau prenne toute la largeur */
+        }
+        .pixel-shadow {
+            text-shadow: 1px 1px #3F3351;
+        }
+        .hero { color: #F7A276; font-weight: bold;}
+        .antihero { color: #AAB6FF; font-weight: bold;}
+        .robot { color: #F2D16B; font-weight: bold;}
+        .bulle { background: #282044; padding: 12px; border-radius: 12px; display: inline-block; margin-bottom: 2em;}
+        /* Pour simuler un effet 'pixel art' */
+        * {
+            image-rendering: pixelated;
+        }
+        ::selection {
+            background: #F7A276;
+            color: #222;
+        }
+        a {
+            color: #FFB99A; text-decoration: underline;
+        }
+    </style>
+    <!-- Police pixel gratuite de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="pixel-shadow">Babylone — Concept de Jeu Vidéo</h1>
+
+    <div class="bulle">
+        <strong>Sommaire</strong>
+        <ol>
+            <li><a href="#presentation">Présentation du projet</a></li>
+            <li><a href="#personnages">Personnages principaux</a></li>
+            <li><a href="#concepts">Concepts clés</a></li>
+            <li><a href="#fonctionnalites">Fonctionnalités principales</a></li>
+            <li><a href="#workflow">Workflow de conception</a></li>
+            <li><a href="#illustrations">Illustrations</a></li>
+            <li><a href="#annexes">Annexes</a></li>
+        </ol>
+    </div>
+
+    <h2 id="presentation">1. Présentation du projet</h2>
+    <p>Une météorite s’est écrasée sur la planète, libérant des miasmes toxiques. Ces derniers agissent comme un virus, affectant aussi bien les êtres vivants que les machines. Face à cette contamination, la planète est devenue dangereuse, poussant l’humanité à s’exiler sur une station en orbite sous la direction de <span class="hero">Ruby</span>.</p>
+    
+    <h2 id="personnages">2. Personnages principaux</h2>
+    <ul>
+        <li><span class="hero">Ruby</span> : Leader du groupe d’exilés réfugiés sur la station orbitale.</li>
+        <li><span class="hero">Mikes</span> : Scientifique resté sur Terre pour chercher un remède. Avant de succomber, il crée Lumi-7.</li>
+        <li><span class="robot">Lumi-7</span> : Robot scientifique doté d’un alliage résistant, d’un microprocesseur puissant et d’une rune de pouvoir. Aucunement immunisé, la contamination progresse dans ses circuits.</li>
+        <li><span class="antihero">James</span> : Architecte de la station orbitale, devient rebelle. Veut utiliser la station pour purifier la planète avec un rayon solaire destructeur.</li>
+    </ul>
+    
+
+    <h2 id="concepts">3. Concepts clés</h2>
+    <ul>
+        <li>Propagation toxique, contamination évolutive (impacte humains, machines, environnement)</li>
+        <li>Missions : reconnecter la station, collecter des données, chercher un remède</li>
+        <li>Gestion/upgrade d'énergie via runes</li>
+        <li>Conflit idéologique, choix moraux majeurs</li>
+        <li>Factions : exilés, rebelles, entités hostiles</li>
+        <li>Progression du "virus" à gérer chez Lumi-7</li>
+        <li>Univers 2D pixel art post-apo</li>
+    </ul>
+
+    <h2 id="fonctionnalites">4. Fonctionnalités principales du jeu</h2>
+    <ul>
+        <li><strong>Exploration post-apocalyptique</strong> : Découverte de zones contaminées, collecte d’indices</li>
+        <li><strong>Contrôle de Lumi-7 ou d'autres personnages</strong> pour mener les missions</li>
+        <li><strong>Gestion/évolution de la contamination</strong> chez les robots et humains</li>
+        <li><strong>Système de quêtes scénarisées</strong> : récupérer, réparer, infiltrer, sauver</li>
+        <li><strong>Gestion de l'énergie via runes</strong></li>
+        <li><strong>Interactions avec les factions</strong> et intelligence artificielle des ennemis</li>
+        <li><strong>Choix à impact</strong> pour plusieurs issues de scénario</li>
+        <li><strong>Environnements et énigmes</strong></li>
+        <li><strong>Pixel art atmosphérique</strong></li>
+    </ul>
+    
+    <h2 id="workflow">5. Workflow de conception</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Étape</th>
+                <th>Objectif attendu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Idéation</td><td>Univers, personnages, mécaniques principales</td></tr>
+            <tr><td>Documentation</td><td>Scénario, lore, moodboards</td></tr>
+            <tr><td>Prototypage</td><td>Premières bases jouables</td></tr>
+            <tr><td>Design</td><td>Graphismes, UI/UX, création assets</td></tr>
+            <tr><td>Développement</td><td>Programmation, scripts</td></tr>
+            <tr><td>Tests & itérations</td><td>Playtests, debug, équilibre</td></tr>
+            <tr><td>Intégration audio</td><td>Sons, musiques, voix</td></tr>
+            <tr><td>Storytelling</td><td>Dialogues/cinématiques</td></tr>
+            <tr><td>Optimisation</td><td>Debug, amélioration performance</td></tr>
+            <tr><td>Lancement</td><td>Beta test, sortie publique</td></tr>
+        </tbody>
+    </table>
+
+    <h2 id="illustrations">6. Illustrations</h2>
+    <p>Ajoute ici avatars, environnements ou captures du jeu au besoin.</p>
+
+    <h2 id="annexes">7. Annexes</h2>
+    <p>Fiches techniques, scripts, croquis, annexes éventuelles.</p>
+</body>
+</html>
